@@ -37,7 +37,7 @@ def test_future_new_country_addition():
     response = requests.post(url, json=new_country_data)
     
     # Currently, we expect a 500 status code since POST is not supported
-    assert response.status_code == 500, f"Expected 405 for POST but got {response.status_code}"
+    assert response.status_code == 500, f"Expected 500 for POST but got {response.status_code}"
 
 if __name__ == "__main__":
     test_get_country_info()

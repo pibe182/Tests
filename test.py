@@ -194,8 +194,6 @@ waitradiobutton = WebDriverWait(driver, 10).until(EC.presence_of_element_located
 
 # Locate the SVG radio button element by its attributes using XPath
 svg_radio_button = driver.find_element(By.XPATH, "//svg[circle[@cx='12' and @cy='12']]")
-
-# Perform actions with the located SVG radio button element
 svg_radio_button.click()
 
 orderbutton = driver.find_element(By.CLASS_NAME, "primary")
